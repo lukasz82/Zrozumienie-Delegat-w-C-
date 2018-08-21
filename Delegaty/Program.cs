@@ -24,24 +24,24 @@ namespace Delegaty
 
         private static void Funkcja(int km)
         {
-            Console.WriteLine("Ten samochód przejechał: " + km);
+            Console.WriteLine("Samochód przejechał pomyślnie dystans " + km + " km \n");
         }
 
         private static void Informacja(int km)
         {
             if (km == 0)
             {
-                Console.WriteLine(km + "km ten samochód nie przejechał ani kilometra");
+                Console.WriteLine(km + " km - ten samochód nie przejechał ani kilometra \n\n");
             }
 
             if (km > 0 & km < 20)
             {
-                Console.WriteLine(km + "km ten samochód przejechał dosyć którki dystans");
+                Console.WriteLine(km + " km - ten samochód przejechał dosyć którki dystans \n\n");
             }
 
             if (km > 20)
             {
-                Console.WriteLine(km + "km ten samochód przejechał dosyć długi dystans");
+                Console.WriteLine(km + " km  -ten samochód przejechał dosyć długi dystans \n\n");
             }
         }
     }

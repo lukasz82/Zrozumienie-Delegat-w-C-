@@ -30,8 +30,9 @@ namespace Delegaty
             double spalono = km * spalanie;
             przebieg = przebieg + km;
             iloscPaliwa = iloscPaliwa - spalono;
-            Console.WriteLine("Przejechalem: " + km + ", Spalilem: " + spalono + ", Pozostalo paliwa: " + iloscPaliwa);
+            Console.WriteLine("Przejechalem: " + km + ", Spalilem: " + spalono + ", Pozostalo paliwa: " + iloscPaliwa + "\n");
             // Wywołuję delegat, ten delegat następnie wywoła funkcję na zewnątrz, która nie jest bezpośrednio związana z tą klasą
+            // Tak naprawde ten delegat wysyła sygnał "Hej! zostałem wywołany, więc sam wywołam inną funkcję ;-]
             delegat(km);
         }
 
